@@ -94,5 +94,52 @@
 
 ---
 
+### OvaArquitectura - Service
+- *Responsable:* German Andres Rojas Cardona (@yermanandress)
+- *Repositorio:* https://github.com/yermanandress/ova-arquitectura
+- *Docker Hub:* germanandress/ovaarq-app:latest
+- *Base URL (EC2):* http://172-31-14-229:8080
+- *Swagger UI:* http://<ip-o-dominio>:<puerto>/swagger-ui  
+- *Entidades principales:*  
+  - <EntidadPrincipal> (campos clave: …)  
+- *Endpoints mínimos:*  
+- POST /api/ova/pregunta → guardar nueva pregunta
+- GET /api/ova/pregunta → obtener pregunta aleatoria
+- GET /api/ova/validar/{id}/{indice} → validar respuesta por índice
+- *Tecnologías:* Spring Boot 3.2.5, JNI, C Native, Docker, JDK 21  
+- *Checklist de verificación (semanal):*  
+  - [✔] Compila y arranca local  
+  - [✔] /actuator/health *UP* en local  
+  - [ ] Swagger accesible en EC2  
+  - [✔] Push diario con commits significativos  
+  - [✔] Historia/tarea en Jira: *En progreso* → *Terminado* al finalizar
+
+---
+
+## responsables (vista rápida)
+
+| Rol | Nombre | Usuario GitHub | Observaciones |
+|---|---|---|---|
+| Autor De Ova Arquitectura | German Rojas | @yermanandress | Microservicio De Cuestionario Arquitectura |
+| DevOps | German Rojas | @yermanandress | Docker y despliegue |
+
+---
+
+## notas de la semana
+- Fecha: 2025-11-08
+
+### Cambios relevantes:
+
+  - Implementación de JNI con librería nativa libovaarq.so
+  - Endpoints GET y POST para preguntas funcionando
+  - Integración básica con Docker para despliegue local
+
+### Bloqueos/riesgos:
+
+  - Conflictos de puertos al levantar Docker
+  - Dependencia de librería nativa y cJSON (libovaarq.so)
+  - Swagger aún no desplegado en EC2
+
+
 
 
