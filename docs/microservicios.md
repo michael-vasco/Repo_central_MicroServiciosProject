@@ -10,14 +10,76 @@
 | curso-service  | CRUD para cursos dentro de programas   | https://github.com/Santi202305/Corse-Service.git  | http://<ip-o-dominio>:8083 | http://<ip-o-dominio>:8083/swagger-ui |  santiago garcia granda (@santi202305) | En progreso   |
 | programa-service | CRUD para programas dentro de facultades | none | http://<ip-o-dominio>:8084 | http://<ip-o-dominio>:8084/swagger-ui | michael stiven vasco cardenas  (@michael-vasco) | Pendiente   |
 
+### *usuario-service*
 
-## responsables (vista rápida)
+* *Responsable:* Nicolás Lozano (@Nicolas-Lozano-Salazar)
+* *Repositorio:* https://github.com/Nicolas-Lozano-Salazar/Usuario_serv
+* *Docker Hub:* nicolasls/usuario-service:latest
+* *Base URL (EC2):* http://<ip-o-dominio>:8080
+* *Swagger UI:* http://<ip-o-dominio>:8080/swagger-ui
+
+---
+
+### *Entidades principales*
+
+#### Usuario
+
+| Campo          | Tipo   | Restricciones             |
+| -------------- | ------ | ------------------------- |
+| id             | Long   | Autogenerado              |
+| cedula         | Long   | Único, no nulo            |
+| contrasena     | String | Entre 6 y 100 caracteres  |
+| correo         | String | Único, formato válido     |
+| nombreCompleto | String | Entre 2 y 100 caracteres  |
+| rol            | String | Máx. 50 caracteres        |
+| telefono       | Long   | Numérico, máx. 15 dígitos |
+
+---
+
+### *Endpoints principales*
+
+| Método     | Ruta                                           | Descripción                    |
+| ---------- | ---------------------------------------------- | ------------------------------ |
+| *GET*    | /api/v1/usuario-service/usuarios             | Lista todos los usuarios       |
+| *GET*    | /api/v1/usuario-service/usuarios/page/{page} | Lista usuarios por página      |
+| *GET*    | /api/v1/usuario-service/usuarios/{id}        | Busca un usuario por ID        |
+| *POST*   | /api/v1/usuario-service/usuarios             | Crea un nuevo usuario          |
+| *PUT*    | /api/v1/usuario-service/usuarios             | Actualiza un usuario existente |
+| *DELETE* | /api/v1/usuario-service/usuarios             | Elimina un usuario existente   |
+
+---
+
+### *Tecnologías*
+
+* *Spring Boot 3.2.x*
+* *JDK 23*
+* *Jakarta Validation (Bean Validation)*
+* *Spring Data JPA*
+* *Maven*
+* *Docker*
+* *Swagger* (pendiente integración)
+
+---
+
+### *Características*
+
+* API REST funcional con validaciones de entrada.
+* Manejo de excepciones personalizadas (UsuarioNoEncontradoException, ValidationException, etc.).
+* Paginación implementada con PageRequest.
+* Entidad Usuario completamente validada con anotaciones @NotNull, @Email, @Size, @Digits.
+* Contenerización lista para despliegue en Docker.
+* Compatible con Swagger UI para documentación automática.
+
+---
+
+
+## responsables
 
 | Rol | Nombre | Usuario GitHub | Observaciones |
 |---|---|---|---|
 | Scrum Master |  michael stiven vasco cardenas | @michael-vasco | — |
-| DevOp | santiago garcia granda  | @santi202305 | EC2, puertos, dominios |
-| DevOps | nicolas lozano salazar  | @nicolas-lozano-salazar | EC2, puertos, dominios |
+| DevOp | santiago garcia granda  | @santi202305 | - |
+| DevOps | nicolas lozano salazar  | @nicolas-lozano-salazar | - |
 | DevOps |  Javier eduardo moran  | @javier-eduardo-moran-jurado | http://18.119.253.236:8080 |
 | DevOps | german andres rojas  | @yermanandress | http://172-31-14-229:8080 |
 | Autor de servicio | nicolas lozano salazar | @nicolas-lozano-salazar | usuario-service |
@@ -26,6 +88,7 @@
 
 
 ## notas de la semana
+
 - Fecha: 2025-11-11  
 - Cambios relevantes:  
   - se termino el servicio de usuario.
