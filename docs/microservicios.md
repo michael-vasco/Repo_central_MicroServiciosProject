@@ -141,8 +141,6 @@
   - Swagger aún no desplegado en EC2
 
 
-@109813858087063  ## detalle por servicio
-
 ### lagrange-service
 - *Responsable:* Javier Morán (@Javier-Moran-Jurado)  
 - *Repositorio:* https://github.com/Javier-Moran-Jurado/Lib-Lagrange.git  
