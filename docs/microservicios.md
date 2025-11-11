@@ -14,6 +14,7 @@
 ## responsables (vista rápida)
 
 | Rol | Nombre | Usuario GitHub | Observaciones |
+|---|---|---|---|
 | Scrum Master |  michael stiven vasco cardenas | @michael-vasco | — |
 | DevOp | santiago garcia granda  | @santi202305 | EC2, puertos, dominios |
 | DevOps | nicolas lozano salazar  | @nicolas-lozano-salazar | EC2, puertos, dominios |
