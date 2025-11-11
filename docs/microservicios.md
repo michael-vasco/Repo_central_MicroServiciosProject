@@ -72,18 +72,6 @@
 
 ---
 
- *Fecha:* 2025-11-08
-
-### *Cambios relevantes*
-
-* Implementación completa del CRUD de Usuario.
-* Validaciones de datos y manejo de errores personalizado.
-* Integración de paginación en endpoints de lectura.
-* Pendiente: integración final de Swagger UI y despliegue en EC2.
-
-
----
-
 ## *Responsables*
 
 | Rol                     | Nombre          | Usuario GitHub          | Observaciones              |
@@ -102,4 +90,9 @@
 * Validaciones de datos y manejo de errores personalizado.
 * Integración de paginación en endpoints de lectura.
 * Pendiente: integración final de Swagger UI y despliegue en EC2.
+
+
+---
+
+
 
