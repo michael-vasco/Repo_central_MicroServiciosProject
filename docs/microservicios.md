@@ -72,19 +72,28 @@
 
 ---
 
+ *Fecha:* 2025-11-08
 
-## responsables
+### *Cambios relevantes*
 
-| Rol | Nombre | Usuario GitHub | Observaciones |
-|---|---|---|---|
-| Scrum Master |  michael stiven vasco cardenas | @michael-vasco | — |
-| DevOp | santiago garcia granda  | @santi202305 | - |
-| DevOps | nicolas lozano salazar  | @nicolas-lozano-salazar | - |
-| DevOps |  Javier eduardo moran  | @javier-eduardo-moran-jurado | http://18.119.253.236:8080 |
-| DevOps | german andres rojas  | @yermanandress | http://172-31-14-229:8080 |
-| Autor de servicio | nicolas lozano salazar | @nicolas-lozano-salazar | usuario-service |
-| Autor de servicio | michael stiven vasco cardenas | @michael-vasco | facultad-service |
-| Autor de servicio | santiago garcia granda | @santi202305 | curso-service |
+* Implementación completa del CRUD de Usuario.
+* Validaciones de datos y manejo de errores personalizado.
+* Integración de paginación en endpoints de lectura.
+* Pendiente: integración final de Swagger UI y despliegue en EC2.
+
+
+---
+
+## *Responsables*
+
+| Rol                     | Nombre          | Usuario GitHub          | Observaciones              |
+| ----------------------- | --------------- | ----------------------- | -------------------------- |
+| Autor del microservicio | Nicolás Lozano  | @Nicolas-Lozano-Salazar | Desarrollo y documentación |
+| DevOps                  | Nicolás Lozano  | @Nicolas-Lozano-Salazar | Imagen Docker y despliegue |
+| Scrum Master            | michael stiven vasco cardenas  | @michael-vasco | — |
+
+---
+
 
 
 ## notas de la semana
