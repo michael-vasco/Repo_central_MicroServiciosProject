@@ -94,16 +94,12 @@
 
 ---
 
+ *Fecha:* 2025-11-08
 
+### *Cambios relevantes*
 
-## notas de la semana
+* Implementación completa del CRUD de Usuario.
+* Validaciones de datos y manejo de errores personalizado.
+* Integración de paginación en endpoints de lectura.
+* Pendiente: integración final de Swagger UI y despliegue en EC2.
 
-- Fecha: 2025-11-11  
-- Cambios relevantes:  
-  - se termino el servicio de usuario.
-  - los ovas de arquitectura, sistemas operativos y analisis numerico han sido acabados y revisados
-  - los servicios de facultad y curso se han puesto en revision
-- Bloqueos/riesgos:  
-  - problemas con las cuentas de aws para el uso de la instancia de EC2
-  - inconvenientes con el manejo de docker
-  - problemas de manejo de contraseñas en la base de datos
