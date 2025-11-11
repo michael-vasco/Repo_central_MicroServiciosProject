@@ -140,6 +140,7 @@
   - Dependencia de librería nativa y cJSON (libovaarq.so)
   - Swagger aún no desplegado en EC2
 
+---
 
 ### lagrange-service
 - *Responsable:* Javier Morán (@Javier-Moran-Jurado)  
