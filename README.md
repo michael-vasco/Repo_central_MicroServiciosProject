@@ -7,9 +7,9 @@
 -Santiago garcia granda
 
 ## Listado de microservicios
--[Usuario_service]{ https://github.com/Nicolas-Lozano-Salazar/Usuario_serv}
--[Facultad_service]{https://github.com/michael-vasco/Facultad-Service.git}
--[Curso_service]{https://github.com/Santi202305/Corse-Service.git}
+-[Usuario_service] { https://github.com/Nicolas-Lozano-Salazar/Usuario_serv}
+-[Facultad_service] {https://github.com/michael-vasco/Facultad-Service.git}
+-[Curso_service] {https://github.com/Santi202305/Corse-Service.git}
 
 ## Listado de OVAS
 -[Ova de arquitectura]{https://github.com/yermanandress/ova-arquitectura}
