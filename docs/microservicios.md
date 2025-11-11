@@ -141,5 +141,45 @@
   - Swagger aún no desplegado en EC2
 
 
+@109813858087063  ## detalle por servicio
+
+### lagrange-service
+- *Responsable:* Javier Morán (@Javier-Moran-Jurado)  
+- *Repositorio:* https://github.com/Javier-Moran-Jurado/Lib-Lagrange.git  
+- *Docker Hub:* javier200521/lagrange-app:latest  
+- *Base URL (EC2):* http://18.119.253.236:8080  
+- *Swagger UI:* http://<ip-o-dominio>:8080/swagger-ui  
+- *Entidades principales:*  
+  - InterpolacionRequest (puntos: double[][], x: double)  
+- *Endpoints:*  
+  - POST /api/lagrange/interpolar - Interpolación con puntos personalizados  
+  - GET /api/lagrange/test - Prueba con valores predefinidos  
+- *Tecnologías:* Spring Boot 3.2.5, JNI, C Native, Docker, JDK 21  
+- *Características:*  
+  -  Integración JNI con librería nativa C  
+  -  Contenerizado con Docker  
+  -  API REST funcional  
+  -  Interpolación polinómica de Lagrange  
+
+---
+
+## responsables (vista rápida)
+
+| Rol | Nombre | Usuario GitHub | Observaciones |
+|---|---|---|---|
+| Autor de lagrange-service | Javier Morán | @Javier-Moran-Jurado | Microservicio de interpolación numérica |
+| DevOps | Javier Morán | @Javier-Moran-Jurado | Docker y despliegue |
+| Scrum Master | michael stiven vasco cardenas | @michael-vasco | — |
+
+---
+
+## notas de la semana
+- Fecha: 2025-11-07  
+- Cambios relevantes:  
+  - Spring Boot + JNI integrado exitosamente  
+  -  Endpoints REST /api/lagrange/interpolar y /test funcionando  
+  -  Docker image construida y lista para despliegue  
+  -  Pendiente: Configurar Swagger UI  
+  - 🔄 Pendiente: Despliegue en EC2 con IP pública
 
 
