@@ -265,21 +265,21 @@
 
 ## roundrobin-service
 
-Responsable: Nicolás Lozano (@nicolasls)
-Repositorio: https://github.com/Nicolas-Lozano-Salazar/Ova_Operativos
-Docker Hub: nicolasls/springboot-jni:latest
-Base URL (EC2): http://<ip-o-dominio>:8080
-Swagger UI: http://<ip-o-dominio>:8080/swagger-ui
-Entidades principales:
-ProcesosDTO (id: int, llegada: int, rafaga: int, prioridad: int)
-Endpoints:
-POST /api/sistemas-operativos/roundrobin/{quantum} → Ejecuta el algoritmo Round Robin
-Tecnologías: Spring Boot 3.2.x, JNI (Java Native Interface), C/C++ nativo, Docker, JDK 26
-Características:
-Integración JNI con librería nativa libRoundRobin
-Contenerizado con Docker
-API REST funcional
-Simulación completa del algoritmo de planificación Round Robin
+-Responsable: Nicolás Lozano (@nicolasls)
+-Repositorio: https://github.com/Nicolas-Lozano-Salazar/Ova_Operativos
+-Docker Hub: nicolasls/springboot-jni:latest
+-Base URL (EC2): http://<ip-o-dominio>:8080
+-Swagger UI: http://<ip-o-dominio>:8080/swagger-ui
+-Entidades principales:
+-ProcesosDTO (id: int, llegada: int, rafaga: int, prioridad: int)
+-Endpoints:
+-POST /api/sistemas-operativos/roundrobin/{quantum} → Ejecuta el algoritmo Round Robin
+-Tecnologías: Spring Boot 3.2.x, JNI (Java Native Interface), C/C++ nativo, Docker, JDK 26
+-Características:
+-Integración JNI con librería nativa libRoundRobin
+-Contenerizado con Docker
+-API REST funcional
+-Simulación completa del algoritmo de planificación Round Robin
 
 ## responsables 
 
@@ -291,8 +291,8 @@ Simulación completa del algoritmo de planificación Round Robin
 Fecha: 2025-11-08
 Cambios relevantes:
 
-Integración completa entre Spring Boot y la librería JNI
-Endpoint /api/sistemas-operativos/roundrobin/{quantum} funcionando correctamente 
-Imagen Docker construida y lista para subir a Docker Hub
-Pendiente: Integrar documentación con Swagger UI
-Pendiente: Despliegue final en instancia EC2 con IP pública
+-Integración completa entre Spring Boot y la librería JNI
+-Endpoint /api/sistemas-operativos/roundrobin/{quantum} funcionando correctamente 
+-Imagen Docker construida y lista para subir a Docker Hub
+-Pendiente: Integrar documentación con Swagger UI
+-Pendiente: Despliegue final en instancia EC2 con IP pública
