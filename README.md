@@ -4,6 +4,7 @@
 - Michael stiven vasco cardenas
 - Javier eduardo moran jurado
 - German andres rojas
+- Nicolas lozano salazar
 - Santiago garcia granda
 
 ## Listado de microservicios
