@@ -97,7 +97,7 @@
 ### *facultad-service*
 
 * *Responsable:*  michael stiven vasco cardenas (@michael-vasco)
-* *Docker Hub:* none
+* *Docker Hub:* michaelvasco/facultad-service:latest
 * *Base URL (EC2):* http://<ip-o-dominio>:8080
 * *Swagger UI:* http://<ip-o-dominio>:8080/swagger-ui
 
