@@ -299,7 +299,7 @@ Fecha: 2025-11-08
 
 ---
 
-  # ### corse-service
+### corse-service
 
 * Responsable:  Santiago García (@Santi202305)  
 * Repositorio base (.zip): https://github.com/Santi202305/Curse-Service.git  
