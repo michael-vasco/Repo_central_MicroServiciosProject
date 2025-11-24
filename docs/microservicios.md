@@ -12,7 +12,7 @@
 | lagrange-service | Ova de analisis numerico | https://github.com/Javier-Moran-Jurado/Lib-Lagrange.git | http://<ip-o-dominio>:8084 | http://<ip-o-dominio>:8084/swagger-ui | javier edurado moran  (javier-moran-jurado) | finalizado   |
 | ovaarquitectura-service | Ova de arquitectura de computadores | https://github.com/yermanandress/ova-arquitectura | http://<ip-o-dominio>:8084 | http://<ip-o-dominio>:8084/swagger-ui | german andres rojas  (@yermanandres) | finalizado   |
 | roundrobin-service | Ova de sistemas operativos | https://github.com/Nicolas-Lozano-Salazar/Ova_Operativos | http://<ip-o-dominio>:8084 | http://<ip-o-dominio>:8084/swagger-ui | nicolas lozano salazar  (@nicolas-lozano-salazar) | finalizado   |
-| Angular-app-web | Sistema web de gestion de servicios en linea | none | http://<ip-o-dominio>:8084 | http://<ip-o-dominio>:8084/swagger-ui | santiago garcia granda  (@santi202305) | finalizado   |
+| Angular-app-web | Sistema web de gestion de servicios en linea | https://github.com/Santi202305/Angular-app-web.git | http://<ip-o-dominio>:8084 | http://<ip-o-dominio>:8084/swagger-ui | santiago garcia granda  (@santi202305) | finalizado   |
 
 ### *usuario-service*
 
