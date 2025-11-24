@@ -305,7 +305,7 @@ Fecha: 2025-11-08
 
 * Responsable:  Santiago García (@Santi202305)  
 * Repositorio base (.zip): https://github.com/Santi202305/Curse-Service.git  
-* Docker Hub: santiago2305/corse_service-app:latest  
+* Docker Hub: santiago2305/corse_service-corse-service:latest  
 * Base URL (EC2): http://<ip-o-dominio>:8080  
 * Swagger UI: http://<ip-o-dominio>:8080/swagger-ui  
 
