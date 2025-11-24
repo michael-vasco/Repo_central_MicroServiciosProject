@@ -114,7 +114,6 @@
 | -------------- | ------ | ------------------------- |
 | id             | Long   | Autogenerado              |
 | nombre         | String   | no vacio, no nulo, entre 2 a 50 caracteres            |
-| contraseña     | String | Entre 6 y 100 caracteres  |
 | descripcion         | String | no mas de 255 caracteres |
 | direccion | String | Entre 5 y 100 caracteres, no nulo, no vacio  |
 | ciudad            | String | entre 2 a 50 caracteres, no nulo, no vacio        |
@@ -142,7 +141,7 @@
 * *Jakarta Validation (Bean Validation)*
 * *Spring Data JPA*
 * *Maven*
-* *Docker*  (pendiente integración)
+* *Docker*  
 * *Swagger* (pendiente integración)
 
 ---
@@ -374,10 +373,85 @@ Versión detectada: /api/v1/cursos
 
 Fecha: 2025-11-11
 
-### Cambios relevantes
-
 * Implementación completa del CRUD de Curso.
 * Manejo de excepciones centralizado.
 * Organización del proyecto en capas (delivery, domain, infraestructura HTTP).
+  
+---
+
+### *programa-service*
+
+* *Responsable:*  michael stiven vasco cardenas (@michael-vasco)
+* *Docker Hub:* michaelvasco/programa-service:latest
+* *Base URL (EC2):* http://<ip-o-dominio>:8080
+* *Swagger UI:* http://<ip-o-dominio>:8080/swagger-ui
+
+---
+
+### *Entidades principales*
+
+#### programa
+
+| Campo          | Tipo   | Restricciones             |
+| -------------- | ------ | ------------------------- |
+| id             | Long   | Autogenerado              |
+| nombre         | String   | no vacio, no nulo, entre 2 a 50 caracteres            |
+| descripcion         | String | no mas de 255 caracteres |
+| cupos       | Integer   | Numérico, no nulo, no vacio, entre 1 a 500 cupos |
+
+---
+
+### *Endpoints principales*
+
+| Método     | Ruta                                           | Descripción                    |
+| ---------- | ---------------------------------------------- | ------------------------------ |
+| *GET*    | /api/v1/programa-service/programas             | Lista todos los facultades       |
+| *GET*    | /api/v1/programa-service/programas/page/{page} | Lista facultades por página      |
+| *GET*    | /api/v1/programa-service/programas/{id}        | Busca un facultad por ID        |
+| *POST*   | /api/v1/programa-service/programas             | Crea un nuevo facultad          |
+| *PUT*    | /api/v1/programa-service/programas             | Actualiza un facultad existente |
+| *DELETE* | /api/v1/programa-service/programas             | Elimina un facultad existente   |
+
+---
+
+### *Tecnologías*
+
+* *Spring Boot 3.4.4*
+* *JDK 21*
+* *Jakarta Validation (Bean Validation)*
+* *Spring Data JPA*
+* *Maven*
+* *Docker*
+* *Swagger* (pendiente integración)
+
+---
+
+### *Características*
+
+* API REST funcional con validaciones de entrada.
+* Manejo de excepciones personalizadas (ProgramaNoEncontradoException, ValidationException, etc.).
+* Paginación implementada con PageRequest.
+* Entidad Programa completamente validada con anotaciones @NotNull, @Email, @Size, @Digits.
+* Compatible con Swagger UI para documentación automática.
+
+---
+
+## *Responsables*
+
+| Rol                     | Nombre          | Usuario GitHub          | Observaciones              |
+| ----------------------- | --------------- | ----------------------- | -------------------------- |
+| Autor del microservicio | michael stiven vasco cardenas  | @michael-vasco | Desarrollo y documentación |
+| DevOps                  | michael stiven vasco cardenas  | @michael-vasco | none |
+
+---
+
+ *Fecha:* 2025-11-23
+
+### *Cambios relevantes*
+
+* Implementación completa del CRUD de Programa.
+* Validaciones de datos y manejo de errores personalizado.
+* Integración de paginación en endpoints de lectura.
+* Pendiente: integración final de Swagger UI y despliegue en EC2.
 
 ---
